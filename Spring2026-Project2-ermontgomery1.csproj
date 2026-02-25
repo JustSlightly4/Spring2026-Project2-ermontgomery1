@@ -16,4 +16,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
 </Project>
