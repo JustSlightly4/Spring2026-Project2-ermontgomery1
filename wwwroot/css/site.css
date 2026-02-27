@@ -29,3 +29,45 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.knowledge-graph {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Pushes text to left, image to right */
+    align-items: flex-start; /* Aligns them at the top */
+    border: 1px solid #ccc; /* Added solid so it's visible */
+    padding: 15px;
+    margin-bottom: 20px;
+    gap: 20px; /* Adds space between text and image */
+}
+
+.kg-text-wrapper {
+    flex: 1; /* Allows the text to take up remaining space */
+}
+
+.knowledge-graph-image-class {
+    width: 100px;
+    height: auto; /* Keeps image proportions */
+    object-fit: cover;
+    border-radius: 8px; /* Optional: makes it look a bit cleaner */
+}
+
+.organic-results {
+    margin-bottom: 15px;
+}
+
+.people-also-ask {
+
+}
+
+.related-searches {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.related-search-btn {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer; /* Bonus: makes it look clickable! */
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
