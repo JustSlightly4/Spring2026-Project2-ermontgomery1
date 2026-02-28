@@ -3,23 +3,30 @@
 
 <head>
     <title>Googolplex</title>
+    <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <h1 float="middle">Googolplex</h1>
-        <input type="text" id="searchText" />
-        <button id="searchButton">SEARCH</button>
+    <h1 class="EngineTitle">Googolplex</h1>
+    <div class="EngineHeader">
+        <input type="text" id="query" />
+        <div class="EngineButtons">
+            <button id="searchButton">Search</button>
+            <button id="luckyButton">I'm Feeling Lucky</button>
+            <button id="timeButton">Current Time</button>
+        </div>
+    </div>
+
+    <div id="timeDialog" title="Current Time" style="display:none;">
+        <p id="timeContent"></p>
     </div>
 
     <p id="searchResultsHeader"></p>
-
-    <!--The search results will be displayed here'-->
-    <!--The results get appended to this after the search-->
     <p id="searchResults"></p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css" integrity="sha384-IUy5/r9Ihkf8KKnMsd1BzkscCgiRNeS+JpJxqozy6rZVCGdsxhJ8an7uR6rtKqdG" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha384-SStJQoPipVtHHnIgUfDI+jTAbSyU+HMbhwt2XRRNpLIRFg9VguopT6Y4+cdOlkqg" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/ui-darkness/jquery-ui.css" integrity="sha384-B9cgBSbzyBJR591Xg2FsbexzueXzYyURepM9hOS2PsR66LV+LApXBagd8nQUoKOY" crossorigin="anonymous">
     <script src="js/site.js"></script>
 </body>
 

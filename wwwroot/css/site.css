@@ -18,7 +18,15 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-color 1.5s ease, background-image 0.5s ease;
+    color: #ffffff;
+    transition: background-color 1.5s ease, color 1.5s ease; /*IDK if this actually works*/
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -30,44 +38,89 @@ body {
   text-align: start;
 }
 
+.EngineButtons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.EngineHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.EngineTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-image 0.5s ease-in-out;
+}
+
 .knowledge-graph {
-    display: flex; /* Enables Flexbox */
-    justify-content: space-between; /* Pushes text to left, image to right */
-    align-items: flex-start; /* Aligns them at the top */
-    border: 1px solid #ccc; /* Added solid so it's visible */
-    padding: 15px;
-    margin-bottom: 20px;
-    gap: 20px; /* Adds space between text and image */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    border: 1px solid #ccc; 
+    padding: 5px;
+    margin-bottom: 10px;
+    gap: 20px; 
 }
 
 .kg-text-wrapper {
-    flex: 1; /* Allows the text to take up remaining space */
+    flex: 1;
 }
 
 .knowledge-graph-image-class {
-    width: 100px;
-    height: auto; /* Keeps image proportions */
+    width: 150px;
+    height: auto;
     object-fit: cover;
-    border-radius: 8px; /* Optional: makes it look a bit cleaner */
+    border-radius: 8px;
 }
 
 .organic-results {
-    margin-bottom: 15px;
+    padding: 5px;
+    margin-bottom: 3px;
 }
 
 .people-also-ask {
 
 }
 
-.related-searches {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
+.related-searches-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
-.related-search-btn {
+
+.related-search-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.related-search-button {
     margin: 5px;
     padding: 5px 10px;
-    cursor: pointer; /* Bonus: makes it look clickable! */
+    cursor: pointer;
     border: 1px solid #ccc;
     background-color: #f8f9fa;
+}
+
+.search-active {
+    background-image: none; 
+    background-color: black;
+    color: white; 
+}
+
+#timeButton {
+    display: none;
+}
+
+.search-active #timeButton {
+    display: inline-block;
 }
